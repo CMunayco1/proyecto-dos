@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3</title>
+    <style>
+        body {
+            background: radial-gradient(red, yellow, rgb(30,144,255));
+
+        }
+        .radius{
+            background: green;
+            height: 40px;
+            width: 40px;
+            /* border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px; */
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+            /* border-radius: 5px 30px;
+            position: relative; */
+            margin-right: 6px;
+            box-shadow: inset 4px 4px #195e01, 4px 4px red;
+            
+        }   
+        
+         .flex {
+            display: flex;
+        }
+
+        /* .flex:hover .radius{ */
+            box-shadow: 10px 4px red;
+            border-radius: 10px; 
+        } */
+
+        /* .line{
+            width: 1px;
+            height: 78%;
+            background: #369a13;
+        } */
+        h1:hover {
+            /* transition: text-shadow 0.5s; */
+            text-shadow: 1px 1px 0px white, 2px 2px 0px blue, -2px -2px 0px pink; 
+        }
+
+        .fondo {
+            width: 90%;
+            height: 200px;
+            background-image: url("https://www.w3schools.com/css/img_flwr.gif"), url("https://www.w3schools.com/css/paper.gif");
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, repeat;
+            padding: 15px;
+        }
+
+        .degradados {
+            width: 200px;
+            height: 200px;
+            /* background: linear-gradient(
+                to right,
+                rgba(225,255,255,0),
+                rgba(225,255,255,1),
+                ),
+                url("https://www.w3schools.com/css/img_flwr.gif"); */
+                background: radial-gradient(red, yellow, rgb(30,144,255));
+                transition: all 0.5s ease;
+        }
+
+        .degradados:hover {
+            border-radius: 10px;
+            opacity: 0.5;
+            width: 100%;
+            background: green;
+        }
+
+        .flex {
+            justify-content:space-around;
+            /* text-align: center; */
+        }
+
+        input {
+            transition: all 0.5s ease;
+            border: 1px solid white;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px blue;
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <!-- <div class="radius"></div>
+        <div class="radius"></div> -->
+        <!-- <form action=""> -->
+            <input type="text" />
+            <input type="text"/>
+        <!-- </form> -->
+    </div>
+    <h1>TEXTO</h1>
+    <div class="fondo"></div>
+    <div class="degradados"></div>
+</body>
+</html>
